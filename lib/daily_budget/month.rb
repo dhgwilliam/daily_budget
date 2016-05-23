@@ -3,7 +3,7 @@ class Month
     Time.now.day
   end
 
-  def self.month
+  def self.this_month
     Time.now.month
   end
 
@@ -12,7 +12,7 @@ class Month
   end
 
   def self.days_left
-    self.days(self.month) - self.day
+    self.days(self.this_month) - self.day
   end
 
   private
